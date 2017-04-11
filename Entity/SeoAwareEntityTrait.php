@@ -23,7 +23,7 @@ trait SeoAwareEntityTrait {
     /**
      * @var SeoMetadata
      *
-     * @ORM\ManyToOne(targetEntity="Symfony\Cmf\Bundle\SeoBundle\Model\SeoMetadata", cascade={"persist", "remove"}, fetch="LAZY")
+     * @ORM\ManyToOne(targetEntity="Symfony\Cmf\Bundle\SeoBundle\Model\SeoMetadata", cascade="all")
      */
     protected $seoMetadata;
 
